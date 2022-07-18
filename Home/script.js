@@ -15,6 +15,9 @@ slider.oninput = function () {
   sizePassword.innerHTML = this.value
 }
 
+function senhasSalvas() {
+  let
+}
 function generatePassword() {
   let pass = ''
 
@@ -24,9 +27,11 @@ function generatePassword() {
 
   containerPassword.classList.remove('hide')
   password.innerHTML = pass
+
+  novaSenha = pass
 }
 
-function copyPassword(){
-  alert("Senha Copiada com sucesso!")
-  navigator.clipboard.writeText(novasenha)
+function copyPassword() {
+  alert('Senha Copiada com sucesso!')
+  navigator.clipboard.writeText(novaSenha)
 }

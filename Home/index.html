@@ -15,39 +15,52 @@
     </div>
 
     <div class="log">
-
       <img class="logo" src="./assets/logo.png" alt="Gerador de senha" />
-
     </div>
 
-    <main class="container-input">
-      <span>Tamanho: <span id="valor"></span> caracteres </span>
-      <input
-        id="slider"
-        class="slider"
-        type="range"
-        min="5"
-        max="25"
-        value="20"
-      />
-      <button id="button" class="button-cta" onclick="generatePassword()">
-        Gerar senha
-      </button>
-    </main>
-    <div
-      id="container-password"
-      onclick="copyPassword()"
-      class="container-password hide"
-    >
-      <span class="title">Sua senha foi gerada:</span>
-      <span id="password" class="password"></span>
-      <span class="tootip">Clique na senha para copiar.</span>
+    <div class="container">
+      <div>
+        <button
+          id="button-add"
+          class="senhas-armazenadas"
+          onclick="senhasSalvas()"
+        >
+          Senhas geradas
+        </button>
+      </div>
+      <button id="Button" class="senhas-armazenadas" onclick=""></button>
+      <main class="container-input">
+        <span>Tamanho: <span id="valor"></span> caracteres </span>
+        <input
+          id="slider"
+          class="slider"
+          type="range"
+          min="5"
+          max="25"
+          value=""
+        />
+        <button id="button" class="button-cta" onclick="generatePassword()">
+          Gerar senha
+        </button>
+      </main>
+      <div
+        id="container-password"
+        onclick="copyPassword()"
+        class="container-password hide"
+      >
+        <span class="title">Sua senha foi gerada:</span>
+        <span id="password" class="password"></span>
+        <span class="tootip">Clique na senha para copiar.</span>
+      </div>
+      <script src="script.js"></script>
+
+      <div class="fundo">
+        <footer>
+          <section class="rodape">
+            <p><strong>Desde </strong> 2022</p>
+          </section>
+        </footer>
+      </div>
     </div>
-    <script src="script.js"></script>
-    <footer>
-      <section class="rodape">
-        <p><strong>Desde </strong> 2022</p>
-      </section>
-    </footer>
   </body>
 </html>
